@@ -6,7 +6,7 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f2f2f2;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -14,27 +14,31 @@
             margin: 0;
         }
         .card {
-            background-color: #fff;
+            background-color: #f7f7f7;
             width: 300px;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
             text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
         }
         h1 {
-            margin-bottom: 10px;
-            font-size: 24px;
+            margin-bottom: 15px;
+            font-size: 28px;
             color: #333;
         }
         p {
-            color: #555;
-            font-size: 14px;
-            margin: 5px 0;
+            color: #666;
+            font-size: 16px;
+            margin: 8px 0;
         }
         img {
             width: 100%;
-            border-radius: 10px;
-            margin-bottom: 15px;
+            border-radius: 15px;
+            margin-bottom: 20px;
         }
         a {
             color: #007bff;
@@ -43,20 +47,24 @@
         a:hover {
             text-decoration: underline;
         }
-        .background-blue {
-            background-color: #c7d8ed;
+        .contact-info {
+            background-color: #e9f1fb;
+            padding: 8px;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
-    <div class="card background-blue">
+    <div class="card">
         <img src="ItsChaosticom.gif" alt="5 Month Hardwork">
         <h1>Rhyzen Christopher S. Bamba</h1>
-        <p>Surveyon</p> 
-        <p>Frozenwater</p>
-        <p>Email: rhyzensb@gmail.com</p>
-        <p>Phone: +63-9166509018</p>
-        <p>Website: <a href="https://yourwebsite.com">yourwebsite.com</a></p>
+        <div class="contact-info">
+            <p>Surveyon</p>
+            <p>Frozenwater</p>
+            <p>Email: rhyzensb@gmail.com</p>
+            <p>Phone: +63-9166509018</p>
+            <p>Website: <a href="https://yourwebsite.com">yourwebsite.com</a></p>
+        </div>
     </div>
 </body>
 </html>
