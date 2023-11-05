@@ -66,8 +66,7 @@
 
         function getRandomArt() {
             const asciiArts = [
-                
-  <pre id="asciiArt" style="display: none;"> 
+                `
 | |_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_| |
 |||   ___ _________                          | |
 | |         _ _____                             |
@@ -88,17 +87,16 @@
  | \  _  (|      | ) 你好   Hallo  Hola Kamusta |
  | |     × /'\_   _/`\\ Bonjour नमस्ते ===========|
 | |       \___)=(___/ _________________________||
-    </pre>
-                `,
-                `
-                 <pre id="asciiArt" style="display: none;"> 
+    
+`,
+`
   0!       ,-. `,
  /I\     /     \ `
   |     |   O   |
  / \    |   |   |
          \_._._/
-             </pre>
-`,
+             
+`, 
 `
              <pre id="asciiArt" style="display: none;">             
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -141,10 +139,9 @@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-</pre>
-`,
+
+`, 
 `
-      <pre id="asciiArt" style="display: none;"> 
        o
     /|\
    / | \
@@ -156,7 +153,7 @@
   |  |  |
  /___♤___\
 |___ ♧ ___|
-    </pre>      
+`      
             ];
 
             return asciiArts[Math.floor(Math.random() * asciiArts.length)];
@@ -178,7 +175,7 @@
     <button onclick="displayArt()">About Me!</button>
 
     <pre id="asciiArt" style="display: none;">
-        <!-- This is where the ASCII art will be displayed -->
+        
     </pre>
 </body>
 </html>
