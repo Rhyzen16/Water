@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Table,onContact</title>
+    <title>My Table, on Contact</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -38,13 +38,15 @@
         }
     </style>
     <script>
-        
-      }
         function greetUser() {
             alert("Well you Found IT OR NOT HAHAHAHAHAHHAHAHAHAHAHAHAHAHAHAHAHAHAHHAHAHAHAHHAHAHAHAHAHAHAHAHAHHAHAHAHAHAHAHAHAHAHA");
         }
 
-        // Additional JavaScript for animation
+        function displayArt() {
+            var art = document.getElementById("asciiArt");
+            art.style.display = "block";
+        }
+
         window.onload = function() {
             rotateImage();
             moveCard();
@@ -74,12 +76,10 @@
         <p>Website: <a href="https://yourwebsite.com">yourwebsite.com</a></p>
     </div>
 
-    <button onclick="greetUser()"> Hello! Welcome to my Desk, My Table,On Contact
-    </button>
-    <button onclick="displayArt()">
-        About Me!
-    </button>
-        <pre id="asciiArt" style="display: none;">
+    <button onclick="greetUser()">Hello! Welcome to my Desk, My Table, On Contact</button>
+    <button onclick="displayArt()">About Me!</button>
+
+    <pre id="asciiArt" style="display: none;">
         ______
         /  0 o \
         I  L   3d
@@ -92,13 +92,5 @@
    |_   _____________________|________|
   l  inc,ltb,team,group l      TEC
     </pre>
-
-    <script>
-        function displayArt() {
-            var art = document.getElementById("asciiArt");
-            art.style.display = "block";
-        }
-    </script>
-</button>
 </body>
 </html>
