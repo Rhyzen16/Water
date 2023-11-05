@@ -72,18 +72,30 @@
         <p>Website: <a href="https://yourwebsite.com">yourwebsite.com</a></p>
     </div>
 
-    <button onclick="greetUser()">   
-          ______
-          /  0 o \
-          I  L   3d
-        __|  ___  |__
-      ___/  _______   \___
-     __/  _______________  \__
-   /|__________________________\_
+    <button onclick="greetUser()"> Hello! Welcome to my Desk, My Table,On Contact
+        <button onclick="displayArt()">
+        About Me!
+    </button>
+
+    <pre id="asciiArt" style="display: none;">
+        ______
+        /  0 o \
+        I  L   3d
+      __|  ___  |__
+    ___/  _______   \___
+   __/  _______________  \__
+  /|__________________________\_
   |   |     FROZENWATER          \_
- l   |_____________________|      \_
-  |_   _____________________|________|
-l  inc,ltb,team,group l      TEC
+  l   |_____________________|      \_
+   |_   _____________________|________|
+  l  inc,ltb,team,group l      TEC
+    </pre>
+
+    <script>
+        function displayArt() {
+            var art = document.getElementById("asciiArt");
+            art.style.display = "block";
+        }
 </button>
 </body>
 </html>
