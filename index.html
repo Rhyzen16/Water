@@ -65,29 +65,9 @@
         }
 
         function getRandomArt() {
-            return asciiArts[Math.floor(Math.random() * asciiArts.length)];
-        }
-
-        function greetUser() {
-            var art = document.getElementById('art');
-            art.textContent = getRandomArt();
-    </script>
-</head>
-<body>
-    <div class="card">
-        <img src="ItsChaosticom.gif" alt="5 Month Hardwork">
-        <h1>Rhyzen Christopher S. Bamba</h1>
-        <p>Surveyon</p> 
-        <p>Frozenwater</p>
-        <p>Email: rhyzensb@gmail.com</p>
-        <p>Phone: +63-9166509018</p>
-        <p>Website: <a href="https://yourwebsite.com">yourwebsite.com</a></p>
-    </div>
-
-    <button onclick="greetUser()">     Hello! Welcome to my Desk, My Table, On Contact</button><Br>
-    <button onclick="displayArt()">About Me!</button>
-
-    <pre id="asciiArt" style="display: none;"> 
+            const asciiArts = [
+                
+  <pre id="asciiArt" style="display: none;"> 
 | |_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_| |
 |||   ___ _________                          | |
 | |         _ _____                             |
@@ -109,34 +89,18 @@
  | |     × /'\_   _/`\\ Bonjour नमस्ते ===========|
 | |       \___)=(___/ _________________________||
     </pre>
-    
-    const asciiArts = [
-            `
-    <pre id="asciiArt" style="display: none;"> 
-       o
-    /|\
-   / | \
-  /  |  \
- |   |   |
- |___|___|
-  |  |  |
-  |  |  |
-  |  |  |
- /___♤___\
-|___ ♧ ___|
-    </pre>
-            `,
-            `
-    <pre id="asciiArt" style="display: none;"> 
+                `,
+                `
+                 <pre id="asciiArt" style="display: none;"> 
   0!       ,-. `,
  /I\     /     \ `
   |     |   O   |
  / \    |   |   |
          \_._._/
-</pre>
-            `,
-            `
-    <pre id="asciiArt" style="display: none;">             
+             </pre>
+`,
+`
+             <pre id="asciiArt" style="display: none;">             
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*=+*#%%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -178,7 +142,43 @@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 </pre>
-            `
-        ];
+`,
+`
+      <pre id="asciiArt" style="display: none;"> 
+       o
+    /|\
+   / | \
+  /  |  \
+ |   |   |
+ |___|___|
+  |  |  |
+  |  |  |
+  |  |  |
+ /___♤___\
+|___ ♧ ___|
+    </pre>      
+            ];
+
+            return asciiArts[Math.floor(Math.random() * asciiArts.length)];
+        }
+    </script>
+</head>
+<body>
+    <div class="card">
+        <img src="ItsChaosticom.gif" alt="5 Month Hardwork">
+        <h1>Rhyzen Christopher S. Bamba</h1>
+        <p>Surveyon</p> 
+        <p>Frozenwater</p>
+        <p>Email: rhyzensb@gmail.com</p>
+        <p>Phone: +63-9166509018</p>
+        <p>Website: <a href="https://yourwebsite.com">yourwebsite.com</a></p>
+    </div>
+
+    <button onclick="greetUser()">Hello! Welcome to my Desk, My Table, On Contact</button><br>
+    <button onclick="displayArt()">About Me!</button>
+
+    <pre id="asciiArt" style="display: none;">
+        <!-- This is where the ASCII art will be displayed -->
+    </pre>
 </body>
 </html>
